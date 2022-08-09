@@ -2,91 +2,71 @@
 头像组件
 
 ### 基础用法
-<br />
-<hub-avatar 
-  src="http://smarthub.oss-cn-east-3.unicloudsrv.com/h3c-123-bucket/1549679924155117569.jpg"
-/>
-
-::: details 点击查看代码
-
-```html
-<hub-avatar 
-  src="http://smarthub.oss-cn-east-3.unicloudsrv.com/h3c-123-bucket/1549679924155117569.jpg"
-/>
+:::demo
+```vue
+<template>
+  <hub-avatar 
+    src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+  />
+</template>
 ```
-
 :::
 
 ### 设置大小
-<br />
-<hub-avatar
-  size="50"
-  src="http://smarthub.oss-cn-east-3.unicloudsrv.com/h3c-123-bucket/1549679924155117569.jpg"
-/>
-<br />
-<hub-avatar
-  size="200"
-  src="http://smarthub.oss-cn-east-3.unicloudsrv.com/h3c-123-bucket/1549679924155117569.jpg"
-/>
-
-
-::: details 点击查看代码
-
-```html
-<hub-avatar
-  size="50"
-  src="http://smarthub.oss-cn-east-3.unicloudsrv.com/h3c-123-bucket/1549679924155117569.jpg"
-/>
-<hub-avatar
-  size="200"
-  src="http://smarthub.oss-cn-east-3.unicloudsrv.com/h3c-123-bucket/1549679924155117569.jpg"
-/>
+:::demo
+```vue
+<template>
+  <hub-avatar
+    size="50"
+    src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+  />
+  <hub-avatar
+    size="80"
+    src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+  />
+</template>
 ```
-
 :::
-
 
 ### 设置形状
-<br />
-<hub-avatar 
-  shape="square"
-  src="http://smarthub.oss-cn-east-3.unicloudsrv.com/h3c-123-bucket/1549679924155117569.jpg"
-/>
-<hub-avatar 
-  src="http://smarthub.oss-cn-east-3.unicloudsrv.com/h3c-123-bucket/1549679924155117569.jpg"
-/>
-
-::: details 点击查看代码
-
-```html
-<hub-avatar 
-  shape="square"
-  src="http://smarthub.oss-cn-east-3.unicloudsrv.com/h3c-123-bucket/1549679924155117569.jpg"
-/>
-<hub-avatar 
-  src="http://smarthub.oss-cn-east-3.unicloudsrv.com/h3c-123-bucket/1549679924155117569.jpg"
-/>
+:::demo
+```vue
+<template>
+  <hub-avatar 
+    shape="square"
+    src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+  />
+  <hub-avatar 
+    src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
+  />
+</template>
 ```
-
 :::
 
-
-### 设置默认图标
-<br />
-<hub-avatar
-  shape="circle"
-  icon="el-icon-user"
-/>
-
-::: details 点击查看代码
-
-```html
-<hub-avatar
-  shape="circle"
-  icon="el-icon-user"
-/>
+### 默认图标
+:::demo
+```vue
+<template>
+  <hub-avatar
+    shape="circle"
+  />
+  <hub-avatar
+    size="30"
+  />
+</template>
 ```
+:::
 
+### 修改默认图标
+:::demo
+```vue
+<template>
+  <hub-avatar
+    shape="circle"
+    icon="el-icon-user"
+  />
+</template>
+```
 :::
 
 ### 属性
@@ -96,3 +76,5 @@
 | shape  | 指定头像的形状 | String | circle/square	 | circle |
 | size  | 设置头像的大小 | String | - | 100 |
 | src  | 图片类头像的资源地址 | String | - | - |
+
+<div style="float: right; font-size: 12px;">by：程梦玲</div>

@@ -1,3 +1,11 @@
-@import './demo.scss';
-@import './card.scss';
+// common
+@import './common/var.scss';
+
+// component
 @import './avatar.scss';
+@import './get-code.scss';
+@import './search.scss';
+@import './table/table.scss';
+@import './pagination.scss';
+@import './go-back.scss';
+@import './search-box.scss'

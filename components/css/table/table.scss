@@ -1,0 +1,35 @@
+@import './var.scss';
+.hub-table {
+  .single {
+    .el-table__header {
+      .el-table-column--selection {
+        .el-checkbox {
+          display: none;
+        }
+      }
+    }
+  }
+  &-select-counter {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin: 10px 0;
+    &-label {
+      margin-left: 5px;
+      color: var(--hub-text-color-regular);
+    }
+  }
+  &-multi-label {
+    margin-right: 5px;
+    color: var(--hub-text-color-assist);
+  }
+  .el-table {
+    tr {
+      background-color: #fff;
+    }
+    th.el-table__cell {
+      background-color: #F8FAFF;
+    }
+
+  }
+}

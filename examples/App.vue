@@ -1,19 +1,27 @@
 <template>
   <div id="app">
-    <m-card
-      imgSrc="https://wework.qpic.cn/wwhead/duc2TvpEgSTPk74IwG7BsxHacDI0mc9oPTkQTs2FaxcWY0gdulmFWML6BoheKQhibTXIgdOhgK9Y/0"
-      summary="我是卡片组件" 
+    <hub-avatar
+      shape="square"
+      src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
     />
-    <hub-avatar width="100" height="100" url="https://wework.qpic.cn/wwhead/duc2TvpEgSTPk74IwG7BsxHacDI0mc9oPTkQTs2FaxcWY0gdulmFWML6BoheKQhibTXIgdOhgK9Y/0" />
+    <hub-date-picker :start-time.sync="startTime"
+                     :end-time.sync="endTime"
+    />
   </div>
 </template>
 
 <script>
-import hubAvatar from '../docs/.vuepress/components/hub-avatar.vue'
+// import hubAvatar from '../docs/.vuepress/components/hub-avatar.vue'
 
 export default {
-  components: { hubAvatar },
   name: 'App',
+  // components: { hubAvatar },
+  data() {
+    return {
+      startTime: '',
+      endTime: ''
+    }
+  }
 }
 </script>
 

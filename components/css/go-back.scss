@@ -1,0 +1,16 @@
+.go-back-wrap {
+  display: flex;
+  justify-content: space-between;
+  .go-back-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 5px;
+  }
+  .go-back-btn {
+    font-size: 14px;
+    color: #1890ff;
+    cursor: pointer;
+    width: 100px;
+    text-align: right;
+  }
+}

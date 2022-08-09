@@ -3,7 +3,7 @@ module.exports = {
     index: {
       entry: 'examples/main.js',
       template: 'public/index.html',
-      filename: 'index.html',
+      filename: 'index.html'
     }
   }
 }

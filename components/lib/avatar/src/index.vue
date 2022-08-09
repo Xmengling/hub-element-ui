@@ -1,22 +1,36 @@
 <template>
   <div class="hub-avatar">
-    <div v-show="!src" ref="default" class="hub-avatar-image" :style="shape === 'circle' ? {'border-radius': '50%'} : {'border-radius': '5%'}" >
-      <i v-if="icon" :class="icon" :style="{'font-size': size + 'px'}"></i>
+    <!-- 默认图 -->
+    <div
+      v-show="!src"
+      ref="default"
+      class="hub-avatar-image"
+      :style="shape === 'circle' ? circleStyle : squareStyle"
+    >
+      <div v-if="!icon"><Default /></div>
+      <i
+        v-if="icon"
+        :class="icon"
+        :style="{'font-size': size + 'px'}"
+      />
     </div>
-    <img
+    <!-- src -->
+    <el-image
       v-show="src"
       ref="image"
       class="hub-avatar-image"
-      :style="shape === 'circle' ? {'border-radius': '50%'} : {'border-radius': '5%'}"
+      :style="shape === 'circle' ? circleStyle : squareStyle"
       :src="src"
-    >
+    />
   </div>
 </template>
 
 <script>
+import Default from './components/DefaultAvatar.vue'
 // 头像组件
 export default {
   name: 'hub-avatar',
+  components: { Default },
   props: {
     // 图片地址
     src: {
@@ -36,22 +50,32 @@ export default {
     // 设置默认背景
     icon: {
       type: String,
-      default: 'circle'
+      default: ''
     }
   },
-    data() {
+  data() {
     return {
+      sizeStyle: {
+        'height': this.size + 'px',
+        'width': this.size + 'px'
+      },
+      circleStyle: {
+        'border-radius': '50%'
+      },
+      squareStyle: {
+        'border-radius': '5%'
+      }
     }
+  },
+  created() {
+    this.setStyle()
   },
   mounted() {
-    this.setStyle()
   },
   methods: {
     setStyle() {
-      this.$refs.image.style.width = this.size + 'px'
-      this.$refs.image.style.height = this.size + 'px'
-      this.$refs.default.style.width = this.size + 'px'
-      this.$refs.default.style.height = this.size + 'px'
+      this.circleStyle = Object.assign(this.circleStyle, this.sizeStyle)
+      this.squareStyle = Object.assign(this.squareStyle, this.sizeStyle)
     }
   }
 }

@@ -1,19 +1,19 @@
-const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');// 清理文件夹
+const path = require('path')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')// 清理文件夹
 const { VueLoaderPlugin } = require('vue-loader')
-const glob = require("glob");
+const glob = require('glob')
 
-const list = {};
+const list = {}
 
-async function makeList(dirPath,list){
-  const files = glob.sync(`${dirPath}/**/index.js`);
-  for(let file of files){
-    const output = file.split(/[/.]/)[2];
-    list[output] = `./${file}`;
+async function makeList(dirPath, list) {
+  const files = glob.sync(`${dirPath}/**/index.js`)
+  for (const file of files) {
+    const output = file.split(/[/.]/)[2]
+    list[output] = `./${file}`
   }
 }
 
-makeList('components/lib',list);
+makeList('components/lib', list)
 
 module.exports = {
   entry: list,
@@ -34,10 +34,10 @@ module.exports = {
         test: /\.vue$/,
         use: [
           {
-            loader: 'vue-loader',
+            loader: 'vue-loader'
           }
         ]
       }
     ]
-  },
-};
+  }
+}

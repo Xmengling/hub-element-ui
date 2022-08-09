@@ -1,0 +1,21 @@
+.hub-pagination {
+  .el-pagination.is-background {
+    .btn-prev, .btn-next {
+      background-color: #fff;
+      border: 1px solid #D7D9E0;
+      color: #666666;
+      &:disabled {
+        color: #666666;
+      }
+    }
+    .el-pager li {
+      background-color: #fff !important;
+      border: 1px solid #D7D9E0;
+      &:not(.disabled).active {
+        background-color: #fff !important;
+        border: 1px solid #0081FF;
+        color: #0081FF !important;
+      }
+    }
+  }
+}

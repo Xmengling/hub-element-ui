@@ -1,0 +1,18 @@
+// 新增变量
+.hub-table {
+  --hub-table-header-bg-color: #F8FAFF;
+  --hub-row-color-hover: #F5F9FF;
+  --hub-table-border-color: #000;
+  --hub-table-border: 1px solid var(--hub-table-border-color);
+  --hub-table-loading-duration: 0.9s;
+  --hub-table-empty-symbol-color: var(--hub-color-main);
+}
+
+// element原变量覆盖
+.el-table {
+  --el-table-header-bg-color: var(--hub-table-header-bg-color);
+  --el-table-row-hover-bg-color: var(--hub-row-color-hover);
+  --el-table-border-color: var(--hub-table-border-color);
+  --el-table-header-text-color: var(--hub-text-color-regular);
+  --el-table-text-color: var(--hub-text-color-special);
+}

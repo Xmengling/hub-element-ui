@@ -1,0 +1,28 @@
+.hub-get-verify-code-wrap {
+  display: inline;
+  .hub-verify-code-btn, .hub-count-time {
+    display: inline-block;
+    margin-left: 20px;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    cursor:pointer;
+    border-radius: 4px;
+  }
+  .hub-enabled {
+    border: 1px solid #0171FF;
+    color: #0171FF;
+    cursor: pointer;
+  }
+  .hub-disable {
+    border: 1px solid #6d6f72;
+    color: #6d6f72;
+    cursor:not-allowed;
+  }
+  .hub-count-time {
+    border: 1px solid #6d6f72;
+    color: #6d6f72;
+    cursor: pointer;
+  }
+}

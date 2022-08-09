@@ -1,0 +1,59 @@
+// 公共变量命名规则
+// --hub-[用途]-[属性]-[状态]-[其它标签]
+:root {
+  // 主色
+  --hub-color-main: #456BE5; // 常规
+  --hub-color-main-hover: #456BE5; // 鼠标悬停
+  --hub-color-main-click: #456BE5; // 点击
+  --hub-color-main-disabled: #456BE5; // 禁用
+  --hub-color-main-light: #456BE5; // 浅色/白底悬浮
+  // 功能色
+  --hub-color-clickable: var(--hub-color-main);
+  --hub-color-success: #52C41A;
+  --hub-color-warn: #FF820D;
+  --hub-color-danger: #FF4D4F;
+  // 辅助色
+  --hub-assist-color-1: #EC5B56;
+  --hub-assist-color-2: #EF8152;
+  --hub-assist-color-3: #FFA231;
+  --hub-assist-color-4: #F7C659;
+  --hub-assist-color-5: #FDEB61;
+  --hub-assist-color-6: #C3E459;
+  --hub-assist-color-7: #8ACE55;
+  --hub-assist-color-8: #68CCC8;
+  --hub-assist-color-9: #5BA8F8;
+  --hub-assist-color-10: #5E7FEF;
+  --hub-assist-color-11: #895AD7;
+  --hub-assist-color-11: #E565A8;
+  // 字体重量
+  --hub-text-weight-regular: 400; // 常规
+  --hub-text-weight-medium: 500; // 中黑体
+  --hub-text-weight-semibold: 700; // 中粗体
+  --hub-text-weight-light: 300; // 细体
+  // 字号
+  --hub-text-size-special: 24px; // 特殊文字
+  --hub-text-size-h1: 18px; // 一级标题
+  --hub-text-size-h2: 16px; // 二级标题
+  --hub-text-size-regular: 14px; // 正文/注释
+  --hub-text-size-assist: 12px; // 辅助信息
+  // 字色
+  --hub-text-color-special: #333333; // 特殊文字
+  --hub-text-color-regular: #666666; // 正文
+  --hub-text-color-assist: #999999; // 辅助/说明
+  --hub-text-color-disabled: #CCCCCC; // 辅助/不可用
+  --hub-text-color-white: #FFFFFF; // 白色
+  // 线条
+  --hub-border-color-heavy: #9399A1; // 重
+  --hub-border-color-medium: #C9CDD4; // 深/悬浮
+  --hub-border-color-regular: #E5E6EB; // 一般
+  --hub-border-color-light: #F2F3F5; // 浅
+  // 填充
+  --hub-bg-color-strong: #5A6372; // 强调/图标/特殊场景
+  --hub-bg-color-heavy: #C9CDD4; // 重/特殊场景
+  --hub-bg-color-medium: #E5E6EB; // 深/灰色悬浮
+  --hub-bg-color-regular: #F2F3F5; // 一般/常规/白底悬浮
+  --hub-bg-color-light: #F7F8FA; // 浅色/禁用
+  --hub-bg-color-white: #FFFFFF; // 白色
+  // 圆角
+  --hub-border-radius: 4px;
+}
