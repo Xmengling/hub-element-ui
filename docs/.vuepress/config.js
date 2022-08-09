@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Hub-Element-UI',
   description: '基于element-ui二次封装的组件库',
-  base: "/",
+  base: "/hub-element-ui/",
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
